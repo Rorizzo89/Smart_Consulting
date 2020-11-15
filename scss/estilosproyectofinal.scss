@@ -1,0 +1,228 @@
+/* Variables */
+
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+
+$green-principal: #1ADB8C;
+$black-principal: #000000;
+$black-gradient: #101111;
+$green-gradient: #21D192;
+$gray-index: #5A5C59;
+$black-nav: #101111;
+$gray-flex: #ACB0AA;
+
+/* SCSS*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.noticias__seccion {
+  background-color: $green-principal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  border: outset 1px $green-principal;
+  margin-left: 80px;
+  padding: 20px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  color: $black-principal;
+}
+
+ 
+
+.noticias{
+font-family: 'Roboro', sans-serif;
+font-style: italic !important;
+text-align: center;
+background: linear-gradient(0deg, $green-gradient 0%, $black-gradient 50%);
+color: $green-principal;
+}
+
+.labelNews{
+  padding: 1%;
+  }
+
+
+#fondoindex {
+font-family: 'Roboto', cursive;
+font-size: 15px;
+font-style: normal;
+background-color: $gray-index;
+color: white;
+}
+
+.navbar-logo{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 80px;
+}
+
+.navbar-logo img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#serviciosGrid {
+  display: grid;
+  grid-template-areas: 
+  "Servicio1 Imagen1"
+  "Servicio2 Imagen2"
+  "Servicio3 Imagen3";
+  grid-template-rows: 260px 260px 260px;
+  grid-template-columns: 50%;
+  grid-row-gap: 10px;
+  grid-column-gap: 3px;
+  height: 100vh;
+  margin: 5px;
+  color: $green-principal;
+  font-size: 25px;
+}
+
+section#s1 {
+  grid-area: Servicio1;
+  grid-column-start: 1;
+}
+
+section#s2 {
+  grid-area: Servicio2;
+  grid-column-start: 1;
+}
+section#s3 {
+  grid-area: Servicio3;
+  grid-column-start: 1;
+}
+
+section#i1 {
+  grid-area: Imagen1;
+  grid-column-start: 2;
+}
+
+section#i2 {
+  grid-area: Imagen2;
+  grid-column-start: 2;
+}
+
+section#i3 {
+  grid-area: Imagen3;
+  grid-column-start: 2;
+}
+
+img#i1 {
+width: 950px;
+height: 260px; 
+}
+
+img#i2 {
+width: 950px;
+height: 260px; 
+}
+
+img#i3 {
+width: 950px;
+height: 260px; 
+}
+
+
+.serviciosText {
+font-size: 20px;
+align-content: center;
+}
+
+.border {
+  border: 1px solid $black-principal;
+  background-color: $black-nav;
+}
+
+div#cotizar {
+   width: 160px; height: 30px;
+   transition: all 2s;  
+   text-decoration: none;     
+}
+div#cotizar:hover {
+   height: 40px; width: 200px;
+   padding: 10px;
+   background-color: $green-principal;
+   text-decoration: none;  
+}
+
+#articulosContenedor {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ font-size: 30px;
+ background-color: $gray-index;
+ color: $green-principal;
+ flex-grow: 1;
+}
+
+#parrafosContenedor {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ font-size: 15px;
+ background-color: $gray-flex;
+ color: $black-gradient;
+ flex-basis: auto;
+ flex-grow: 1;
+}
+.titulosFlex {
+  width: 400px;
+  height: 30px;
+  text-align: center;
+}
+.parrafosFlex {
+  width: 400px;
+  height: 66px;
+  text-align: center;
+}
+
+.parrafosFlex__list {
+  list-style-image: url("https://www.flaticon.com/svg/static/icons/svg/126/126482.svg");
+  list-style-position: inside;
+  height: 25px;
+  padding-left: 44px;
+  padding-top: 3px;
+}
+
+div#animacion {
+  width: 1920px;
+  height: 30px;
+  background-color: $green-gradient;
+  animation-name: Conocenos;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+@keyframes Conocenos {
+  0%{width: 600px;
+    height: 30px;}
+  25%{width: 1000px;
+    height: 30px;}
+  50%{width: 600px;
+    height: 30px;}
+  75%{width: 1000px;
+    height: 30px;}
+  100%{width: 1920px;
+    height: 30px;}
+}
+
+nav {
+  background-color: $black-nav !important;
+  font-family: 'Roboto'!important;
+  font-style: normal !important;
+}
+
+.redes{
+  width: 30px !important;
+  height: 30px !important;
+}
