@@ -228,7 +228,7 @@ div#cotizar:hover {
 @media (max-width: 800px) {
   .textbt {
     height: 260px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 45px; } }
 
 .parrafosFlex__list {
